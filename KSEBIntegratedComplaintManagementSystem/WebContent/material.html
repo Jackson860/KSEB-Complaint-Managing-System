@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATERIAL DEPO MANAGER</title>
+    <link rel="stylesheet" type="text/css" href="css/linemansworkallocation.css" />
+</head>
+<script>
+	function materialRequests() {
+		document.getElementById("frame").src = "materialRequests";
+	}
+	function viewIssuedMaterial() {
+		document.getElementById("frame").src = "viewIssuedMaterial";
+	}
+	function viewPayment() {
+		document.getElementById("frame").src = "viewPaymentsDepo";
+	}
+</script>
+<body>
+<header>
+        <h1>Material Depo Manager Dashboard</h1>
+    </header>
+	 <nav>
+        <a href="#" id="" >Work Allocation</a>
+        <a href="#" id="">Material Request</a>
+        <a href="#">Payments</a>
+		<a href="#">Reports</a>
+       <a href="#">Logout</a>
+    </nav>
+    
+    <section>
+        <h2>Welcome, Material Depo Manager!</h2>
+       
+    </section>
+
+	<form id="statusForm">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="allocationNumber">Allocation Number:</label>
+        <input type="text" id="allocationNumber" name="allocationNumber" required>
+
+        <label for="status">Material Details:</label>
+       
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+</body>
+</html>

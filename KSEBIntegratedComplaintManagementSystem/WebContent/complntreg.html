@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/complntreg.css">
+    <title>Administrator New Complaint Registration</title>
+	<link rel="icon" type="PNG" href="images/favicon.png">
+    
+</head>
+<body>
+    <header>
+        <h1>Administrator Dashboard</h1>
+    </header>
+
+    <nav>
+        <a href="#">Complaint</a>
+        <a href="workallocation.html" id="workallocation">Work Allocation</a>
+        <a href="#">Reports</a>
+        <a href="#">Logout</a>
+        <!-- Add more links based on your requirements -->
+    </nav>
+
+    <section>
+        <div class="complaint-form">
+            <h2>New Complaint Registration</h2>
+            <!-- Placeholder form for registering a new complaint with type, date, and consumer number -->
+            
+
+            <label for="complaint-date">Date:</label>
+            <input type="date" id="complaint-date" name="complaint-date" required>
+
+            <label for="consumer-number">Consumer KSEB No:</label>
+            <input type="text" id="consumer-number" name="consumer-number" required>
+
+            <label for="complaint-description">Complaint Description:</label>
+            <textarea id="complaint-description" name="complaint-description" rows="4" required></textarea>
+
+            <button type="submit">Save Complaint</button>
+        </div>
+    </section>
+</body>
+</html>
